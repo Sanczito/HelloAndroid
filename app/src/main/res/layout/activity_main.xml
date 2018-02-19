@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.sancho.helloandroid.MainActivity">
+
+    <ImageView
+        android:id="@+id/udacity"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleX="1.5"
+        android:scaleY="1.9"
+        android:src="@drawable/udacity" />
+
+    <ImageView
+        android:id="@+id/award"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginRight="3dp"
+        android:layout_alignBottom="@id/udacity"
+        android:layout_alignEnd="@id/udacity"
+        android:layout_alignRight="@+id/udacity"
+        android:src="@drawable/image" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/address"
+        android:layout_marginLeft="3dp"
+        android:text="Udacity" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/address2"
+        android:layout_marginLeft="3dp"
+        android:text="2465 Latham St" />
+
+    <TextView
+        android:id="@+id/address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/phone"
+        android:layout_marginLeft="3dp"
+        android:text="Mountain View, CA 94043" />
+
+    <TextView
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:text="650-555-5555" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="3dp"
+        android:background="@android:color/transparent"
+        android:text="www.udacity.com"
+        android:autoLink="web"/>
+
+
+</RelativeLayout>
